@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우주 탐험</title>
+<style>
+  html, body { margin: 0; height: 100%; background: radial-gradient(ellipse at center, #0b1230 0%, #000 70%); color: #dbe6ff; font-family: sans-serif; }
+  main { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; text-align: center; padding: 0 16px; }
+  h1 { margin: 0; font-size: clamp(28px, 6vw, 52px); letter-spacing: 2px; }
+  p { margin: 0; color: #9fb4d6; }
+  button { font-size: 20px; padding: 14px 36px; border: 1px solid #6fa8ff; border-radius: 999px; background: #10204a; color: #fff; cursor: pointer; box-shadow: 0 0 18px #3f7cff66; transition: transform .15s, box-shadow .15s; }
+  button:hover { transform: scale(1.05); box-shadow: 0 0 28px #6fa8ffaa; }
+</style>
+</head>
+<body>
+<main>
+  <h1>우주 천체와 우주선</h1>
+  <p>태양, 행성, 소행성대 사이를 지나가는 우주선을 구경해 보세요.</p>
+  <button id="launch" type="button">우주로 출발 🚀</button>
+</main>
+<script>
+  document.getElementById('launch').addEventListener('click', function () {
+    window.location.href = 'space.html';
+  });
+</script>
+</body>
+</html>
